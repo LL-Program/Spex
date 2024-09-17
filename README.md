@@ -1,7 +1,7 @@
 
-#Spe*
+# Spe*
 ![Logo](Spe.png)
-##Syntax
+## Syntax
  - Declare Function
 ```
   declf my_function { // declare
