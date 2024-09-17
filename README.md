@@ -1,6 +1,7 @@
 
 # Spe*
 ![Logo](Spe.png)
+The Spe* Programming Language for 3d rendering, big calculations and lightweight tasks. It was built for the CHIFEngine of the HTL class 1CHIF 2024.
 ## Syntax
  - Declare Function
 ```
