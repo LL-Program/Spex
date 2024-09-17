@@ -1,40 +1,44 @@
 
-###Spe*
-School Project 3d Engine of 1CHIF HTL class 2024 using python, glsl and c!
-![App Logo](Ressources/CHIF-Engine.png)
-
-## Run the Project
+#Spe*
+![Logo](Spe.png)
+##Syntax
+ - Declare Function
+```
+  declf my_function { // declare
+    math result1 5+10; // save as variable
+    math result2 $result1*2; // calculate with variables
+    print $result1 $result2; // print variables
+}
+my_function; //call
+```
+ - Declare variable
+```
+decl object hello! variable1;// decl type data name
+```
+## Run the Interpreter
 
  - Clone the project
 
 - Windows:
 ```bash
-  run.bat
+  python main.py
 ```
 
 - Linux:
 
 ```bash
   pip install -r requirements.txt
-  python src/main.py
+  python main..py
 ```
  - MacOS: 🤷 Why do you use MacOS for Coding???
 
-## Mitmachen
+## Contribute
  - Wenn du aus der 1CHIF bist gehe einfach auf den Discord Server!
-
  - [CHIFEngine Discord](https://discord.gg/KfNVQbYK)
 
 Liste der Mitmachenden:
 
- - Lukas Rennhofer / @LL-Program (Maintainer, Engine Logic, Physics)
- - Maximilian Panzenböck / @CraftMasterMax (GUI)
+ - Lukas Rennhofer / @LL-Program
  - Moritz Rottensteiner / 
-@Alyopolo (Shader Coding)
- - Matteo Prader / @matm5 (Testing / Benchmark Scripts)
- - Dominik Pascher / @lama22222 (Editor Scripting)
-## Todos
- - [Todos Page](Ressources/Pages/Todo.md)
-## Screenshots
+@Alyopolo
 
-![App Screenshot](Ressources/Screenshot1.png)
