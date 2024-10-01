@@ -90,61 +90,61 @@ version 0.0.1; // Identifies that the code is written in version 0.0.1 and can o
 ## Commands and Their Descriptions
 ### include
 
-Usage: include;
+Usage: ```include moudle;```
 
 Allows the use of external libraries or modules in your code.
 
 ### decl
 
-Usage: decl <type> <name> <value>;
+Usage: ```decl <type> <name> <value>;```
 
 Declares a variable of the specified type (int, str, float, char, bool) and initializes it with a value.
 
 ### declf
 
-Usage: declf <function_name> <parameters> { ... }
+Usage: ```declf <function_name> <parameters> { ... }```
 
 Declares a function with the specified name and parameters. The code block within the curly braces defines the function's behavior.
 
 ### math
 
-Usage: math <variable> (<expression>);
+Usage: ```math <variable> (<expression>);```
 
 Description: Performs a mathematical operation and assigns the result to the specified variable.
 
 ### print
 
-Usage: print <values>;
+Usage: ```print <values>;```
 
 Outputs the specified values to the console.
 
 ### pyfunc
 
-Usage: pyfunc <function_name> <parameters>;
+Usage: ```pyfunc <function_name> <parameters>;v
 
 Connects a Python function for specific functionality.
 
 ### access
 
-Usage: access object <name>;
+Usage: ```access object <name>;```
  
 Accesses the specified object or variable.
 
 ### explode
 
-Usage: explode;
+Usage: ```explode;```
 
 Clears the memory, removing all declared variables.
 
 ### del
 
-Usage: del <name>;
+Usage: ```del <name>;```
 
 Deletes the specified variable from memory.
 
 ### version
 
-Usage: version <version_number>;
+Usage: ```version <version_number>;```
 
 Declares the version of the code, indicating which version of Spex it is compatible with.
 
