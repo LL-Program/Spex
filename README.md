@@ -120,7 +120,7 @@ Outputs the specified values to the console.
 
 ### pyfunc
 
-Usage: ```pyfunc <function_name> <parameters>;v
+Usage: ```pyfunc <function_name> <parameters>;```
 
 Connects a Python function for specific functionality.
 
