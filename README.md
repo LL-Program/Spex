@@ -86,6 +86,8 @@ print Hello $name4 !; // Output: Hello e!
 
 // Version declaration
 version 0.0.1; // Identifies that the code is written in version 0.0.1 and can only be executed in this version
+
+squareroot<361>; //Call the Squareroot function with the argument
 ```
 ## Commands and Their Descriptions
 ### include
