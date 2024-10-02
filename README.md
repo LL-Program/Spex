@@ -92,7 +92,7 @@ squareroot<361>; //Call the Squareroot function with the argument
 ## Commands and Their Descriptions
 ### include
 
-Usage: ```include moudle;```
+Usage: ```include module;```
 
 Allows the use of external libraries or modules in your code.
 
