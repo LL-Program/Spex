@@ -1,0 +1,18 @@
+include "TestScripts/modul.sx";
+include "SpexWrapper.pygame";
+
+func new(x:int, y:int) -> int {
+    return x;
+}
+
+var new::int = 5 + 5;
+
+mass news {
+    var x::int = 0;
+    
+    func eval() -> int {
+        var evals::float = 0.0;
+    } 
+}
+
+new(x, y);
