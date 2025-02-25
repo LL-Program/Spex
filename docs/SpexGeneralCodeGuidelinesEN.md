@@ -193,7 +193,10 @@ Write **unit tests** for every really big function, method or module.
 Tests should be easy to run and cover both **normal and edge cases**.
 
 ```
-void TEST_qLhSD(EntityTests, TestMoveEntity) {
+class Entity {
+    //...
+}
+void TEST_qLhSD() {
     Entity entity(0, 0);
     entity.move(5, 5);
     ASSERT_EQ(entity.getX(), 5);
