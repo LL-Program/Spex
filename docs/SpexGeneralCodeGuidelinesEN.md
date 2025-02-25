@@ -3,11 +3,11 @@
 ## 1. Code Readability
 ### 1.1. Naming Conventions
 
-Classes and Structures: Use **PascalCase** (e.g., ```NPCComponent```, ```EntityManager```).
-Functions and Methods: Use **camelCase** (e.g., ```generateNPC()```, ```calculateHealth()```).
-Variables: Use camelCase for **local variables** and **function parameters** (e.g., ```currentPosition```, ```npcList```).
-Constants: Use ```UPPER_SNAKE_CASE``` (e.g., ```MAX_LEVEL```, ```MAX_SPEED```).
-Enumerations: Use **PascalCase** for enumeration types and values (e.g., ```class NPCType { SOLDIER, TRADER };```).
+ - Classes and Structures: Use **PascalCase** (e.g., ```NPCComponent```, ```EntityManager```).
+ - Functions and Methods: Use **camelCase** (e.g., ```generateNPC()```, ```calculateHealth()```).
+ - Variables: Use camelCase for **local variables** and **function parameters** (e.g., ```currentPosition```, ```npcList```).
+ - Constants: Use ```UPPER_SNAKE_CASE``` (e.g., ```MAX_LEVEL```, ```MAX_SPEED```).
+ - Enumerations: Use **PascalCase** for enumeration types and values (e.g., ```class NPCType { SOLDIER, TRADER };```).
 
 ### 1.2. Descriptive Names
 
