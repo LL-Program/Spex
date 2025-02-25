@@ -1,183 +1,87 @@
+<h1 align="center">
+Spe* Generation System
+<h1/>
 
-# Spe*
-![Logo](Spe.png)
-Spex (Spe*) is a modern interpreted programming language designed for clarity and ease of use. This README provides a comprehensive overview of the language, including commands, example code, and how to run your scripts.It was built for the CHIFEngine of the HTL class 1CHIF 2024.
 
-## Table of Contents
+<p align="center">
+    <img src="page/Spe.png" width="1080" alt="CHIFEngine logo">
+</p>
 
-1. [Getting Started](#getting-started)
-2. [Example Code](#example-code)
-3. [Running Spex Code](#running-spex-code)
-4. [Commands and Their Descriptions](#commands-and-their-descriptions)
-   - [include](#include)
-   - [decl](#decl)
-   - [declf](#declf)
-   - [math](#math)
-   - [print](#print)
-   - [pyfunc](#pyfunc)
-   - [access](#access)
-   - [explode](#explode)
-   - [del](#del)
-   - [version](#version)
-5. [Conclusion](#conclusion)
 
-## Getting Started
+###  Spe* is a modular and scalable Entity & World Generation System designed for large-scale open-world games. It provides procedural generation, a custom binary storage format and an ECS-based architecture for high performance. 
 
-To run Spex code, save your script with a .sx extension. You can run the code in Windows using the following command:
+## Introduction
 
-bash
-./spex.exe filename.sx
+Spe* is built with the intention of providing a high-performance, procedurally generated world system that scales for large-scale open-world games. Its core focus is on performance and flexibility, allowing for dynamic world creation, vast NPC systems, seamless terrain generation, and more.
 
-## Example Code
+This system leverages Entity-Component Systems (ECS) to keep the game's world and entities highly modular, reducing coupling and making it easier to develop complex systems without sacrificing performance. The custom binary storage format allows for fast loading times and a lightweight footprint, ensuring the game runs smoothly even with vast amounts of generated data.
 
-Here is a simple example of Spex code that calculates the square root of a number, with command descriptions included within the code:
+## Features
+
+ - Procedural Generation: Spe* supports robust procedural world generation, enabling the creation of massive, varied game worlds without the need for manual design.
+ - Modular Entity-Component System (ECS): Each game entity is made up of components (such as position, velocity, health, etc.), making it easy to add new features and behaviors dynamically.
+ - Custom Binary Storage Format: Spe* uses a custom binary storage format to efficiently serialize and store world data, which drastically improves load times and data management.
+ - NPC Generation: Generate NPCs with varying behaviors, attributes, and roles based on world context and player interactions.
+ - Scalability: Built to scale with large game worlds, ensuring performance is maintained regardless of the world size or number of entities.
+ - Cross-Platform Compatibility: Designed to work on multiple platforms, making it a versatile tool for game developers.
+
+
+
+## Building
+
+### Clone the repository:
+
+```
+git clone https://github.com/LL-Program/spex.git
+cd spex
 ```
 
-
-// Include necessary libraries or modules
-include; // Allows the use of external libraries
-
-// Declare a function named 'squareroot' that takes one argument 'x'
-declf squareroot<x> {
-    // Declare a float variable 'guess' initialized to 1.0
-    decl float guess 1.0; // Initialize the guess for square root calculation
-
-    // Iteratively improve the guess using the Babylonian method
-    math guess (0.5 * ($guess + ($x / $guess))); // First iteration to improve guess
-    math guess (0.5 * ($guess + ($x / $guess))); // Second iteration
-    math guess (0.5 * ($guess + ($x / $guess))); // Third iteration
-    math guess (0.5 * ($guess + ($x / $guess))); // Fourth iteration
-    math guess (0.5 * ($guess + ($x / $guess))); // Fifth iteration
-    math guess (0.5 * ($guess + ($x / $guess))); // Sixth iteration
-    math guess (0.5 * ($guess + ($x / $guess))); // Seventh iteration
-    math guess (0.5 * ($guess + ($x / $guess))); // Eighth iteration
-    math guess (0.5 * ($guess + ($x / $guess))); // Ninth iteration
-    math guess (0.5 * ($guess + ($x / $guess))); // Tenth iteration
-
-    // Print the final result (the square root of x)
-    print $guess; // Output the calculated square root
-}
-
-// Prints the Interpreted-Active-Functions using a python function to get it to work(for demonstration)
-pyfunc print self.active_functions;
-
-// Print a greeting message
-print Hello!; // Output: Hello!
-
-// Declare various types of variables
-decl int name1 10; // Declare an integer variable
-decl str name2 "esddfgv"; // Declare a string variable
-decl float name3 10.1; // Declare a float variable
-decl char name4 "e"; // Declare a character variable
-decl bool name5 true; // Declare a boolean variable (true)
-decl bool name6 false; // Declare a boolean variable (false)
-
-// Access an object
-access object name1; // Access the variable name1
-
-// Clear memory
-explode; // Clears the memory
-
-// Delete a variable from memory
-del name2; // Deletes the variable name2 from memory
-
-// Print a greeting using a variable
-print Hello $name4 !; // Output: Hello e!
-
-// Version declaration
-version 0.0.1; // Identifies that the code is written in version 0.0.1 and can only be executed in this version
-
-squareroot<361>; //Call the Squareroot function with the argument
+### Build the project:
 ```
-## Commands and Their Descriptions
-### include
-
-Usage: ```include module;```
-
-Allows the use of external libraries or modules in your code.
-
-### decl
-
-Usage: ```decl <type> <name> <value>;```
-
-Declares a variable of the specified type (int, str, float, char, bool) and initializes it with a value.
-
-### declf
-
-Usage: ```declf <function_name> <parameters> { ... }```
-
-Declares a function with the specified name and parameters. The code block within the curly braces defines the function's behavior.
-
-### math
-
-Usage: ```math <variable> (<expression>);```
-
-Description: Performs a mathematical operation and assigns the result to the specified variable.
-
-### print
-
-Usage: ```print <values>;```
-
-Outputs the specified values to the console.
-
-### pyfunc
-
-Usage: ```pyfunc <function_name> <parameters>;```
-
-Connects a Python function for specific functionality.
-
-### access
-
-Usage: ```access object <name>;```
- 
-Accesses the specified object or variable.
-
-### explode
-
-Usage: ```explode;```
-
-Clears the memory, removing all declared variables.
-
-### del
-
-Usage: ```del <name>;```
-
-Deletes the specified variable from memory.
-
-### version
-
-Usage: ```version <version_number>;```
-
-Declares the version of the code, indicating which version of Spex it is compatible with.
-
-## Run the Interpreter
-
- - Clone the project
-
-- Windows:
-```bash
-  ./spex.exe filename
+mkdir build
+cd build
+cmake --
+make
 ```
 
-- Linux:
+After successful compilation, you can link Spe* to your game project or test it directly by running the example worlds.
 
-```bash
-  pip install -r requirements.txt
-  python linux.py filename
-```
- - MacOS: 🤷 Why do you use MacOS for Coding???
+## Core Concepts
+### Entity-Component System (ECS)
 
-## Contribute
- - Wenn du aus der 1CHIF bist gehe einfach auf den Discord Server!
- - [CHIFEngine Discord](https://discord.gg/KfNVQbYK)
+Spe* uses the Entity-Component System to separate concerns and maximize flexibility. The ECS architecture allows for easy composition of behavior and state by attaching components to entities, which are then processed by systems.
 
-Liste der Mitmachenden:
+ - Entity: An individual object in the world (e.g., NPCs, terrain features).
+ - Component: Data associated with an entity (e.g., position, health, AI behaviors).
+ - System: Logic that acts on entities with specific components (e.g., a movement system that updates entities with position and velocity components).
 
- - Lukas Rennhofer / @LL-Program
- - Moritz Rottensteiner / 
-@Alyopolo
+### World Generation
+
+Spe* provides procedural world generation through customizable algorithms. You can configure parameters like world size, terrain features (e.g., mountains, oceans), weather, and more.
+
+ - World generation can be random or guided, depending on your needs.
+ - The system allows for endless procedural generation, so you can create large worlds that expand infinitely.
+ - Integration with ECS enables entities and world features to interact seamlessly.
+
+### Custom Storage Format
+
+To ensure performance, Spe* utilizes a custom binary format for saving and loading world data. This format is optimized for quick reads and writes, reducing load times and memory usage.
+
+ - The storage format supports incremental saving, so only changed or new data is written, making it efficient even for large worlds.
+ - Built-in utilities allow easy serialization and deserialization of world states, so you can pause and resume gameplay or save progress without impacting performance.
 
 
-## Conclusion
+## Contributing
 
-Spex is a versatile programming language that supports a variety of data types and operations, making it suitable for various programming tasks. By understanding the commands and their usages, you can efficiently write and execute Spex code
+We welcome contributions to Spe*! If you'd like to contribute:
+
+ - Fork the repository and create your feature branch (git checkout -b feature/my-feature).
+ - Commit your changes (git commit -am 'Add new feature').
+ - Push to the branch (git push origin feature/my-feature).
+ - Create a new pull request.
+
+Please ensure your code follows the project’s !(coding guidelines)[docs/SpexGeneralCodeGuidelinesEN.md] and includes appropriate tests for any new functionality.
+
+## License
+
+Spe* is open-source and released under the MIT License. See the LICENSE file for more details.
