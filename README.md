@@ -80,7 +80,7 @@ We welcome contributions to Spe*! If you'd like to contribute:
  - Push to the branch (git push origin feature/my-feature).
  - Create a new pull request.
 
-Please ensure your code follows the project’s !(coding guidelines)[docs/SpexGeneralCodeGuidelinesEN.md] and includes appropriate tests for any new functionality.
+Please ensure your code follows the project’s [coding guidelines](docs/SpexGeneralCodeGuidelinesEN.md) and includes appropriate tests for any new functionality.
 
 ## License
 
