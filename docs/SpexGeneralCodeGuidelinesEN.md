@@ -222,4 +222,4 @@ These guidelines are designed to ensure that the code remains **clear, maintaina
 
 ---
 
-### Written By Lukas Rennhofer @2025 | V.1.0.0
+### Written By Lukas Rennhofer @2025 | V.1.0.1
