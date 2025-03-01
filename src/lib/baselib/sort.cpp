@@ -53,7 +53,7 @@ int partition(int array[], int start, int end) {
 */
 void quicksortInt(int array[], int start, int end) {
     
-    // array Case
+    // Base Case
     if (start >= end) {
         return;
     }
