@@ -8,7 +8,7 @@ Spe* Generation System
 </p>
 
 
-###  Spe* is a modular and scalable Entity & World Generation System designed for large-scale open-world games. It provides procedural generation, a custom binary storage format and an ECS-based architecture for high performance. 
+###  Spe* is a modular and scalable Entity & World Generation System designed for Project Voronoid and large-scale-procedural games. It provides procedural generation, a custom binary storage format and an ECS-based architecture for high performance. 
 
 ## Introduction
 
